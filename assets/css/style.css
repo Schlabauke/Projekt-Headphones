@@ -109,7 +109,7 @@ header {
 
 /* ################################ Main Section ############################# */
 
-main section:nth-of-type(1) {
+main .hero {
     margin: 2vh 5vw 15vh 5vw;
     padding-top: 15vh;
 }
@@ -148,4 +148,95 @@ main .sectionZwei .information p {
     color: rgb(115, 115, 115);
     margin-top: 3em;
     line-height: 25px;
+}
+
+/* ######################## Lounger Styles ##################### */
+
+.mainZwei {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+}
+
+.mainZwei section:nth-of-type(1) img {
+    width: 100%;
+}
+
+.mainZwei section:nth-of-type(1) {
+    background: url("../img/section-voyager.jpg") center/cover no-repeat;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.lounger {
+    grid-column: 3/4;
+    margin: 20vh auto;
+    padding: 1em;
+}
+
+.lounger h2 {
+    color: rgb(234, 204, 194);
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+.lounger p {
+    color: rgb(115, 115, 115);
+    margin-top: 1em;
+    line-height: 25px;
+}
+
+/* ########################### Experience Style ########################### */
+
+.mainZwei #experience {
+    background: url("../img/section-experience-1.jpg") center/cover no-repeat;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+/* ################## Inspiration Style ################### */
+
+.mainDrei {}
+
+/*####################### Shop Style ###################### */
+
+.mainZwei #shop {
+    background: url("../img/section-composition4.jpg") center/cover no-repeat;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.mainZwei .shopping {
+    margin: 5em 2em;
+    text-align: center;
+}
+
+.mainZwei .shopping h2 {
+    color: rgb(234, 204, 194);
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 2vh;
+}
+
+.mainZwei .shopping p {
+    color: rgb(115, 115, 115);
+    margin-top: 1vh;
+}
+
+.mainZwei .shopping button {
+    background: rgb(234, 204, 194);
+    margin: 3vh 5vw;
+    padding: 1em 3em;
+    border: 2px solid rgb(234, 204, 194);
+    color: #2e2e2e;
 }
