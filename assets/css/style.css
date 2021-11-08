@@ -1,0 +1,151 @@
+/* font-family: 'Work Sans', sans-serif;
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)  */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 1;
+}
+
+/* ################################### Header ############################## */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 13px;
+    width: 100%;
+}
+
+.nav img {
+    margin-left: 4vw;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1em;
+}
+
+.nav ul div {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3em;
+}
+
+.nav ul li {
+    padding: 1em;
+    opacity: 0.5
+}
+
+/* ######################## ASIDE NAV #################### */
+
+.asideNav {
+    margin: 5em 2em;
+    width: 100%;
+}
+
+.asideNav ul {
+    list-style: none;
+}
+
+.asideNav a {
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+    margin-left: 1.5em;
+}
+
+.asideNav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.doubleBorder {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    opacity: 0.2;
+}
+
+.doubleBorder:before {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    opacity: 0.5;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+
+.asideNav .verticalLine {
+    list-style: none;
+    border-left: 2px solid #fff;
+    height: 5em;
+    opacity: 0.2;
+    margin: 10px 0 10px 9px;
+}
+
+/* ################################ Main Section ############################# */
+
+main section:nth-of-type(1) {
+    margin: 2vh 5vw 15vh 5vw;
+    padding-top: 15vh;
+}
+
+main section:nth-of-type(1) div>img {
+    width: 98%;
+}
+
+main section:nth-of-type(1) h1 {
+    color: rgb(234, 204, 194);
+    font-size: 40px;
+    font-weight: 300;
+    width: 35vw;
+    margin: 5vh 25vw;
+}
+
+main .sectionZwei {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+main .sectionZwei .information {
+    width: 45vw;
+    margin-left: 5em;
+}
+
+main .sectionZwei .information h2 {
+    color: rgb(234, 204, 194);
+    font-size: 40px;
+    font-weight: 300;
+}
+
+main .sectionZwei .information p {
+    color: rgb(115, 115, 115);
+    margin-top: 3em;
+    line-height: 25px;
+}
