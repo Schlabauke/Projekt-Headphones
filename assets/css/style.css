@@ -52,6 +52,12 @@ header {
     opacity: 0.5
 }
 
+.nav ul li:hover {
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity ease 1s;
+}
+
 /* ######################## ASIDE NAV #################### */
 
 .asideNav {
@@ -60,7 +66,8 @@ header {
 }
 
 .asideNav ul {
-    list-style: none;
+    list-style:circle;
+    color:#fff;
 }
 
 .asideNav a {
@@ -98,7 +105,15 @@ header {
     right: 2px;
     bottom: 2px;
 }
-
+.activeDot {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    opacity: 0.8;
+}
 .asideNav .verticalLine {
     list-style: none;
     border-left: 2px solid #fff;
@@ -106,6 +121,13 @@ header {
     opacity: 0.2;
     margin: 10px 0 10px 9px;
 }
+
+  .asideNav a:hover {
+    color:#fff;
+   opacity:1;
+   transition: opacity ease 0.6s;
+  }
+
 
 /* ################################ Main Section ############################# */
 
@@ -202,9 +224,49 @@ main .sectionZwei .information p {
 }
 
 /* ################## Inspiration Style ################### */
+.mainDrei {
+    margin-left: 18vw;
+}
+.mainDrei section:nth-of-type(1) {
+    padding: 5em 5em;
+}
 
-.mainDrei {}
-
+.mainDrei h2, .mainDrei p:nth-of-type(1) {
+    color: rgb(234, 204, 194);
+    font-size: 40px;
+    font-weight:normal;
+}
+.mainDrei p{
+    color: rgb(115, 115, 115);
+    margin: 2vh 0;
+}
+.mainDrei section:nth-of-type(2){
+    margin-bottom: 15vh;
+}
+.mainDrei section:nth-of-type(2) div
+{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+}
+.mainDrei section:nth-of-type(2) div > span{
+    border:2px solid white;
+    padding:1vh 1vw;
+}
+.mainDrei .sound {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#soundImg, #soundImgEins {
+    width:100%;
+}
+.mainDrei .sound article {
+    justify-self: center;
+    align-self: center;
+}
+.mainDrei .sound article p:nth-of-type(2){
+    width:38vw;
+    line-height: 25px;
+}
 /*####################### Shop Style ###################### */
 
 .mainZwei #shop {
